@@ -76,6 +76,14 @@ background: black;
       $('#next').on('click', function() {
         fetchRandomFoodImage();
       });
+      
+      
+      $('#play').on('click', function() {
+              setInterval(function() {
+fetchRandomFoodImage();
+}, 5000);
+      });
+
 
 
     });
