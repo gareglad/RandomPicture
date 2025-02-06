@@ -51,7 +51,10 @@ background: black;
 
         $.getJSON(redditUrl, function(data) {
           var posts = data.data.children;
-          var randomPost = posts[Math.floor(Math.random() * posts.length)];
+          var randomPost = "";
+          while(randomPost){
+              randomPost = posts[Math.floor(Math.random() * posts.length)];
+          }
           var imageUrl = randomPost.data.url;
           var imageurl2 = imageUrl.replace("www", "media");
           var imageurl3 = imageurl2 + '.mp4';
