@@ -53,9 +53,10 @@ background: black;
           var posts = data.data.children;
           var randomPost = posts[Math.floor(Math.random() * posts.length)];
           var imageUrl = randomPost.data.url;
+          var imageurl2 = imageUrl.replace("www", "media");
           console.log(randomPost);
-          console.log(imageUrl);
-          $('#foodImage').attr('src', imageUrl);
+          console.log(imageurl2);
+          $('#foodImage').attr('src', imageurl2);
         });
       }
 
