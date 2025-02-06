@@ -53,7 +53,7 @@ background: black;
           var posts = data.data.children;
           var randomPost = "";
           var imageUrl = "";
-          while(imageUrl){
+          while(!imageUrl){
               randomPost = posts[Math.floor(Math.random() * posts.length)];
               imageUrl = randomPost.data.url;
               console.log(imageUrl);
