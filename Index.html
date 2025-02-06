@@ -66,7 +66,7 @@ $(".box2d").throwable({
 
       // Function to fetch a random food image from Reddit
       function fetchRandomFoodImage() {
-        var redditUrl = 'https://www.reddit.com/r/nsfw/new.json';
+        var redditUrl = 'https://www.reddit.com/r/nsfw/top.json';
 
         $.getJSON(redditUrl, function(data) {
           var posts = data.data.children;
