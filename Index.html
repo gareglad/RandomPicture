@@ -47,7 +47,7 @@ background: black;
 
       // Function to fetch a random food image from Reddit
       function fetchRandomFoodImage() {
-        var redditUrl = 'https://www.reddit.com/r/nsfw/rising.json';
+        var redditUrl = 'https://www.reddit.com/r/nsfw_gif/top.json';
 
         $.getJSON(redditUrl, function(data) {
           var posts = data.data.children;
