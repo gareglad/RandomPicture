@@ -52,8 +52,8 @@ background: black;
         $.getJSON(redditUrl, function(data) {
           var posts = data.data.children;
           var randomPost = "";
-          var n = "redgifs";
-          while(n){
+          var n = 2;
+          while(n > 0){
               randomPost = posts[Math.floor(Math.random() * posts.length)];
               imageUrl = randomPost.data.url;
               console.log(imageUrl);
