@@ -52,7 +52,7 @@ background: black;
         $.getJSON(redditUrl, function(data) {
           var posts = data.data.children;
           var randomPost = posts[Math.floor(Math.random() * posts.length)];
-          var imageUrl = randomPost.data.url;
+          var imageUrl = randomPost.data.thumbnail_url;
           $('#foodImage').attr('src', imageUrl);
         });
       }
