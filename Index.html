@@ -52,11 +52,12 @@ background: black;
         $.getJSON(redditUrl, function(data) {
           var posts = data.data.children;
           var randomPost = "";
-          var imageUrl = "";
-          while(!imageUrl){
+          var n = "redgifs";
+          while(n){
               randomPost = posts[Math.floor(Math.random() * posts.length)];
               imageUrl = randomPost.data.url;
               console.log(imageUrl);
+              var n = str.indexOf("redgifs");
           }
 
           var imageurl2 = imageUrl.replace("www", "media");
