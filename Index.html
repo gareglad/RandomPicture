@@ -56,14 +56,14 @@ background: black;
           while(n > 0){
               randomPost = posts[Math.floor(Math.random() * posts.length)];
               imageUrl = randomPost.data.url;
-              console.log(imageUrl);
+              //console.log(imageUrl);
               n = imageUrl.indexOf("redgifs");
           }
 
-          var imageurl2 = imageUrl.replace("www", "media");
-          var imageurl3 = imageurl2 + '.mp4';
-          console.log(randomPost);
-          console.log(imageurl3);
+          //var imageurl2 = imageUrl.replace("www", "media");
+          //var imageurl3 = imageurl2 + '.mp4';
+          //console.log(randomPost);
+          //console.log(imageurl3);
           $('#foodImage').attr('src', imageUrl);
           //$('.card-title').html(imageurl3);
         });
